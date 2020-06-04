@@ -7,3 +7,6 @@ main.addEventListener('click', function(event) {
   alert('I was clicked!');
 });
 
+document.addEventListener('keypress', function(event) {
+  alert(`${event.key} was pressed`)
+})
