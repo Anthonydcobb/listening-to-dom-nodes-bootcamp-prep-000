@@ -28,5 +28,9 @@ function capture(e) {
 }
 
 divs.forEach(function(div) {
+  div.addEventListener('click', bubble)
+})
+
+divs.forEach(function(div) {
   div.addEventListener('click', capture, true)
 })
