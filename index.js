@@ -10,3 +10,9 @@ main.addEventListener('click', function(event) {
 document.addEventListener('keypress', function(event) {
   alert(`${event.key} was pressed`)
 })
+
+const input = document.querySelector('input')
+
+input.addEventListener('keydown', function(event) {
+  console.log(event.key)
+})
