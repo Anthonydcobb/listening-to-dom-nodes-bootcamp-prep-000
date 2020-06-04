@@ -12,5 +12,9 @@ main.addEventListener('click', function(event) {
 const input = document.querySelector('input')
 
 input.addEventListener('keydown', function(event) {
-  console.log(event.key)
+  if (event.key === "g") {
+    return event.preventDefault()
+  } else {
+    console.log(event.key)
+  }
 })
