@@ -22,3 +22,7 @@ let divs = document.querySelectorAll('div')
 function bubble(e) {
   console.log(this.firstChild.nodeValue)
 }
+
+divs.forEach(function(div) {
+  div.addEventListener('click', bubble)
+})
