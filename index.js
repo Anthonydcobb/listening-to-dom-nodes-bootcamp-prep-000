@@ -23,6 +23,10 @@ function bubble(e) {
   console.log(`${this.firstChild.nodeValue.trim()} bubbled` )
 }
 
+function capture(e) {
+  console.log(`${this.firstChild.nodeValue.trim()} captured`)
+}
+
 divs.forEach(function(div) {
-  div.addEventListener('click', bubble)
+  div.addEventListener('click', capture, true)
 })
